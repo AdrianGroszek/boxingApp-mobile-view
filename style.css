@@ -1,0 +1,317 @@
+:root {
+	--black: #161a1d;
+	--white: #edf2f4;
+	--gold: #d6ac4e;
+	--gray: #9fa2a4;
+	--btn-black: #2c3236;
+	--section-margin: 20px;
+	--font-bold: 500;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--black);
+	color: var(--white);
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 1rem;
+	cursor: pointer;
+	text-align: center;
+	font: inherit;
+}
+
+.view {
+	padding: 0 2rem 50px;
+}
+/* top bar phone time and icons like wi-fi, battery */
+.top-info-bar {
+	width: 100%;
+	/* position: fixed; */
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 32px;
+}
+
+.phone-icons-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+}
+
+.phone-icon {
+	width: 12px;
+	height: 12px;
+	margin-left: 3px;
+	background-color: var(--white);
+	border-radius: 50px;
+}
+
+/* top huge buttons */
+.main-btns-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.huge-btn {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 100px;
+	width: 150px;
+	border-radius: 12px;
+	background-color: var(--btn-black);
+}
+
+.huge-btn-icon {
+	height: 30px;
+	width: 30px;
+	background-color: var(--white);
+	/* temp style */
+	border-radius: 6px;
+}
+
+.huge-btn-text {
+	font-size: 14px;
+	color: var(--white);
+}
+
+/* Date switcher */
+.date-info-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--section-margin);
+}
+
+.date-text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-section-text-bold {
+	margin-bottom: 2px;
+	font-size: 16px;
+	font-weight: var(--font-bold);
+}
+
+.full-date {
+	font-size: 12px;
+	font-weight: var(--font-bold);
+}
+
+.arrow-btn {
+	margin-left: 8px;
+}
+
+.arrow-btn {
+	width: 20px;
+	height: 20px;
+	color: var(--black);
+	font-weight: bold;
+	border-radius: 50px;
+}
+
+/* Active training at the day */
+.upcoming-training-container {
+	margin-bottom: var(--section-margin);
+}
+.header-section-text {
+	margin-bottom: 12px;
+}
+
+.no-activities-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+	text-align: center;
+	font-size: 14px;
+	color: var(--gray);
+}
+
+.active {
+	border: 1px solid var(--gold);
+}
+
+.training-tile {
+	padding: 12px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+	background-color: var(--btn-black);
+	border-radius: 12px;
+}
+
+.training-type-icon {
+	height: 35px;
+	width: 35px;
+	background-color: var(--white);
+	/* temp style */
+	border-radius: 6px;
+}
+
+.training-info-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100%;
+	font-size: 12px;
+}
+
+.training-location-info {
+	display: flex;
+	color: var(--gray);
+}
+
+.training-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.training-location {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.icon {
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	background-color: var(--gray);
+}
+
+.info-text-gray {
+	padding-left: 4px;
+}
+
+.training-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.training-btn-container span {
+	font-size: 21px;
+	margin-right: 10px;
+}
+
+.accept-btn {
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background-color: var(--white);
+	/* temp style */
+	font-weight: bold;
+}
+
+.btn-active {
+	background-color: var(--gold);
+}
+
+/* User statistics tiles */
+.statistics-container {
+	margin-bottom: var(--section-margin);
+}
+
+.tiles-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.statistics-tile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100px;
+	width: 150px;
+	background-color: var(--btn-black);
+	color: var(--gold);
+	border-radius: 12px;
+}
+
+.statistics-tile p {
+	font-size: 14px;
+}
+
+.statistics-tile span {
+	font-size: 48px;
+	font-weight: var(--font-bold);
+}
+
+/* News container */
+.news-tile {
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+	border-bottom: 1px solid var(--gray);
+}
+
+.header-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+.header-box span {
+	font-size: 24px;
+	color: var(--gold);
+}
+
+.header-box .news-tile-header {
+	font-weight: var(--font-bold);
+}
+
+.news-tile .date-text,
+.news-tile .news-text {
+	font-size: 12px;
+}
+
+.news-tile .date-text {
+	color: var(--gold);
+}
+
+.news-tile .news-text {
+	color: var(--gray);
+}
+
+.footer-nav {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	height: 50px;
+	width: 100%;
+}
+
+.footer-nav button {
+	height: 100%;
+	width: 25%;
+	background-color: #0b090a;
+	color: var(--white);
+}
