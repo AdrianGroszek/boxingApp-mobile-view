@@ -40,6 +40,29 @@ button {
 .view {
 	padding: 0 2rem 50px;
 }
+/* burger menu START*/
+.burger-menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #0b090a;
+}
+
+.burger-menu-container p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+	width: 100%;
+	font-size: 26px;
+	font-weight: var(--font-bold);
+}
+
+/* burger menu END*/
+
+/* Main page START */
 /* top bar phone time and icons like wi-fi, battery */
 .top-info-bar {
 	width: 100%;
@@ -315,3 +338,184 @@ button {
 	background-color: #0b090a;
 	color: var(--white);
 }
+/* Main page END */
+
+/* Timetable page START */
+/* calendar */
+.calendar-container {
+	margin: 0 auto 20px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 273px;
+}
+
+.calendar-container p {
+	margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: var(--font-bold);
+}
+
+.calendar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.day-tile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 45px;
+	height: 45px;
+	background-color: var(--btn-black);
+	border-radius: 8px;
+}
+
+.day-tile span:first-child {
+	font-weight: var(--font-bold);
+}
+
+.day-tile span {
+	font-size: 14px;
+}
+
+.active-day-tile {
+	color: var(--gold);
+}
+
+/* upcoming training */
+
+.header-section-text-timetable {
+	width: 273px;
+	margin: 0 auto 12px;
+	font-weight: var(--font-bold);
+	font-size: 14px;
+}
+
+/* remaining trainings */
+
+.training-tile-remaining {
+	margin-bottom: 12px;
+}
+
+.disabled-tile {
+	opacity: 0.4;
+}
+/* timetable page END */
+
+/* coachs page STAER */
+.coach-view-container {
+	padding-top: 50px;
+}
+.uppercase-header,
+.uppercase-header-medium {
+	margin-bottom: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: var(--font-bold);
+}
+
+.gold-text {
+	color: var(--gold);
+}
+
+.coach-tile {
+	display: flex;
+}
+
+.coachs-tiles-container {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 12px;
+	border-radius: 12px;
+	background-color: var(--btn-black);
+	overflow: hidden;
+}
+
+.image-box {
+	width: 70px;
+	height: 70px;
+	background-color: var(--white);
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	padding-left: 12px;
+}
+
+.info-box .info-box-name {
+	font-size: 18px;
+	font-weight: var(--font-bold);
+}
+
+.info-box div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	color: var(--gold);
+}
+
+.info-box div span {
+	font-size: 24px;
+}
+/* coachs page END */
+
+/* selected coach view START */
+.small-margin {
+	margin-bottom: 4px;
+}
+.uppercase-header-medium {
+	font-size: 18px;
+	color: var(--gold);
+}
+
+.big-image-container {
+	height: 170px;
+	width: 100%;
+	background-color: var(--gray);
+	border-radius: 12px;
+	margin-bottom: 20px;
+	/* temp */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+.achievements-info-container {
+	padding: 14px 20px;
+	background-color: var(--btn-black);
+	border-radius: 12px;
+	margin-bottom: 20px;
+}
+
+.achievements-info {
+	display: flex;
+	align-items: center;
+}
+
+.achievements-info:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.achievements-info p {
+	font-size: 14px;
+}
+
+.achievements-icon {
+	height: 30px;
+	width: 30px;
+	margin-right: 12px;
+	background-color: var(--gold);
+	/* temp */
+	border-radius: 6px;
+}
+/* selected coach view END */
